@@ -20,7 +20,10 @@ function buildScripts() {
 }
 
 function watchScripts() {
-  return gulp.watch(['src/scripts/**/*.ts', 'src/shared/**/*'], buildScripts)
+  return gulp.watch(
+    ['src/scripts/**/*.ts', 'src/shared/**/*', 'src/content/**/*'],
+    buildScripts,
+  )
 }
 
 function buildSass() {

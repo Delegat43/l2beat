@@ -5,16 +5,18 @@ import { Logo } from '../Logo'
 import { Banner } from './Banner'
 import { DarkThemeToggle } from './DarkThemeToggle'
 import { OtherLinks } from './OtherLinks'
+import { SidebarMenu } from './SidebarMenu'
 import { SocialLinks } from './SocialLinks'
 
 export function Navbar() {
   return (
     <>
-      <nav className="relative flex justify-between items-center h-[60px] my-2">
-        <button className="block sm:hidden">
+      <SidebarMenu />
+      <nav className="relative flex justify-between items-center h-[68px] py-2">
+        <button id="sidebar-menu-open" className="block md:hidden">
           <MenuOpenIcon className="block" aria-label="Open menu" />
         </button>
-        <ul className="hidden sm:flex gap-4 items-center">
+        <ul className="hidden md:flex gap-4 items-center">
           <SocialLinks />
         </ul>
         <a
@@ -24,7 +26,7 @@ export function Navbar() {
           <Logo />
         </a>
         <div className="flex gap-4 items-center">
-          <ul className="hidden sm:flex gap-4 items-center">
+          <ul className="hidden md:flex gap-4 items-center">
             <OtherLinks />
           </ul>
           <DarkThemeToggle />

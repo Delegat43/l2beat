@@ -1,14 +1,17 @@
 /** @type import("tailwindcss/types").Config */
 module.exports = {
   content: ['./src/**/*.{html,ts,tsx}'],
+  darkMode: 'class',
   theme: {
     extend: {
       fontFamily: {
-        sans: ['Roboto', 'Arial', 'sans-serif'],
+        sans: ['Inter', 'Roboto', 'Arial', 'sans-serif'],
       },
-      colors: {
-        link: 'rgb(var(--link-rgb) / <alpha-value>)',
-      },
+    },
+    colors: {
+      white: '#FFFFFF',
+      black: '#000000',
+      link: 'rgb(var(--link-rgb) / <alpha-value>)',
     },
     screens: {
       xs: '400px',

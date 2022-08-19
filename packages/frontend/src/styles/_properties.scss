@@ -1,11 +1,11 @@
 :root {
   --brand-red: #f9347b;
-  --background: #fafafa;
+  --background: white;
   --background-2: #ededed;
   --background-3: #dfdfdf;
   --background-4: #d3d3d3;
-  --light-text: #fafafa;
-  --dark-text: #222222;
+  --light-text: white;
+  --dark-text: black;
   --text: var(--dark-text);
   --text-muted: #737373;
 
@@ -39,12 +39,12 @@
   --tooltip-background: #ffffff;
   --shadow: rgba(0, 0, 0, 0.2);
 
-  --font-xs: 14px;
-  --font-s: 16px;
-  --font-m: 18px;
-  --font-l: 24px;
-  --font-xl: 32px;
-  --font-xxl: 64px;
+  --font-xs: 12px; // text-xs
+  --font-s: 14px; // text-sm
+  --font-m: 16px; // text-base
+  --font-l: 18px; // text-lg
+  --font-xl: 24px; // text-2xl
+  --font-xxl: 32px; // text-4xl
 }
 
 :root.dark {
@@ -69,16 +69,4 @@
   --highlight-warning: #fdcf44;
 
   --background-job: #000000;
-}
-
-@media (max-width: 1000px) {
-  html,
-  body {
-    --font-xs: 12px;
-    --font-s: 14px;
-    --font-m: 16px;
-    --font-l: 18px;
-    --font-xl: 24px;
-    --font-xxl: 32px;
-  }
 }

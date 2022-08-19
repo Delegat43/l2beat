@@ -19,7 +19,7 @@ export function Page(props: Props) {
         preloadApi={props.preloadApi}
         includeMetaImageStyles={props.includeMetaImageStyles}
       />
-      <body className="leading-[1.15]">
+      <body className="bg-white text-black dark:bg-black dark:text-white">
         <div className="Page">{props.children}</div>
         <Tooltip />
         <script src="/scripts/main.js" />
